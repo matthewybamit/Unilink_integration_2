@@ -89,18 +89,6 @@ $liked_posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <style>
 
-.report-modal-content {
-    background-color: white;
-    margin-top: 330px;
-    margin-left: 680px;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.modal-close-btn{
-    margin-left: 140px;
-}
 /* Sidebar Styling */
 .forum-sidebar {
     width: 15%;
@@ -456,6 +444,39 @@ $liked_posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="report-modal-content">
         <!-- Close button for the modal -->
  
+<!-- Report Modal -->
+<div id="report-modal-<?= $post['id'] ?>" class="report-modal" style="display: none;">
+    <div class="report-modal-content">
+        <h3>Report Post</h3>
+        <form id="report-form-<?= $post['id'] ?>" onsubmit="submitReportForm(event, <?= $post['id'] ?>)">
+            <label for="reason">Select Reason:</label>
+            <select name="reason" id="reason" required>
+                <option value="Spam">Spam</option>
+                <option value="Offensive Content">Offensive Content</option>
+                <option value="Harassment">Harassment</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <textarea name="comments" placeholder="Additional comments (optional)" rows="4"></textarea>
+
+            <!-- Hidden field for post ID -->
+            <input type="hidden" name="post_id" value="<?= $post['id'] ?>">
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-report-btn">Submit Report</button>
+        </form>
+
+        <!-- Close Button Outside the Form -->
+        <button class="modal-close-btn" onclick="closeReportModal(<?= $post['id'] ?>)">Close</button>
+
+        <div id="report-status-<?= $post['id'] ?>" class="report-status"></div> <!-- To show success/failure -->
+    </div>
+</div>
+
+
+
+
+
 
         <h3>Report Post</h3>
         <form id="report-form-<?= $post['id'] ?>" onsubmit="submitReportForm(event, <?= $post['id'] ?>)">
@@ -600,6 +621,54 @@ $liked_posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
     </div>
 </div>
+
+<script> // Open the report modal
+function openReportModal(postId) {
+    const modal = document.getElementById(`report-modal-${postId}`);
+    modal.style.display = 'flex';
+}
+
+// Close the report modal
+function closeReportModal(postId) {
+    const modal = document.getElementById(`report-modal-${postId}`);
+    modal.style.display = 'none';
+}
+
+// Form submission (optional - if using AJAX)
+document.querySelectorAll('.report-form').forEach(form => {
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const postId = this.querySelector('[name="post_id"]').value;
+        const reason = this.querySelector('[name="reason"]').value;
+        const comments = this.querySelector('[name="comments"]').value;
+
+        // Send the data to the server via AJAX
+        fetch('report_post.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `post_id=${postId}&reason=${reason}&comments=${comments}`
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Post has been reported.');
+                closeReportModal(postId); // Close the modal after submission
+            } else {
+                alert('Error reporting post.');
+            }
+        })
+        .catch(error => {
+            alert('An error occurred.');
+            console.error('Error:', error);
+        });
+    });
+});
+
+
+</script>
 
 
 <script src="ForumJs/preview_image.js"></script>

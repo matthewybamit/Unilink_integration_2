@@ -46,18 +46,8 @@ if ($notifications) {
 </head>
 
 <style>
-.report-modal-content {
-    background-color: white;
-    margin-top: 330px;
-    margin-left: 680px;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-.modal-close-btn{
-    margin-left: 140px;
-}
+
 /* Sidebar Styling */
 .forum-sidebar {
     width: 15%;
@@ -408,12 +398,10 @@ if ($notifications) {
         <i class="fa-solid fa-flag"></i> Report
     </button>
 </div>
+
 <!-- Report Modal -->
 <div id="report-modal-<?= $post['id'] ?>" class="report-modal" style="display: none;">
     <div class="report-modal-content">
-        <!-- Close button for the modal -->
- 
-
         <h3>Report Post</h3>
         <form id="report-form-<?= $post['id'] ?>" onsubmit="submitReportForm(event, <?= $post['id'] ?>)">
             <label for="reason">Select Reason:</label>
@@ -429,15 +417,17 @@ if ($notifications) {
             <!-- Hidden field for post ID -->
             <input type="hidden" name="post_id" value="<?= $post['id'] ?>">
 
+            <!-- Submit Button -->
             <button type="submit" class="submit-report-btn">Submit Report</button>
-                    <!-- New Close Button -->
-        <button class="modal-close-btn" onclick="closeReportModal(<?= $post['id'] ?>)">Close</button>
-        
         </form>
+
+        <!-- Close Button Outside the Form -->
+        <button class="modal-close-btn" onclick="closeReportModal(<?= $post['id'] ?>)">Close</button>
 
         <div id="report-status-<?= $post['id'] ?>" class="report-status"></div> <!-- To show success/failure -->
     </div>
 </div>
+
 
 
 <!-- Comments Section -->
