@@ -1,0 +1,128 @@
+  /* User Profile CSS (user-profile.css) */
+
+/* Cover Photo */
+.profile-header {
+    margin-top: 10rem;
+    position: relative;
+    text-align: left;
+  
+}
+
+
+.profile-info {
+    position: flex;
+    margin-left: 5rem;
+
+}
+
+.profile-picture {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid rgb(27, 14, 96 ) ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Social Links */
+.social-links a {
+    margin: 0 5px;
+    color: #555;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+/* Tabs */
+.profile-tabs {
+ 
+    margin-top: 20px;
+    display: flex;
+   background-color: rgb(27, 14, 96 ) ;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    margin-left: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;   
+    background-color: transparent;
+    color: #ff975e;
+}
+
+.tab-btn.active {
+    background-color: #322b77;
+    border-bottom: 3px solid #007bff;
+    color: #cc784b;
+}
+
+.tab-btn:hover {
+    color: #007bff;
+}
+
+/* Profile Details */
+.profile-details {
+    
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ff975e;
+    padding-bottom: 10px;    
+    margin-bottom: 10px;
+    width: 40rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+.profile-details p, h3{
+    margin-left: 80px;
+}
+/* Logout Button */
+#logoutButton {
+    justify-content: right;
+    position: absolute;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    left: 93%;
+    transform: translatey(-48%);
+}
+
+#logoutButton:hover {
+    background-color: #c82333;
+}

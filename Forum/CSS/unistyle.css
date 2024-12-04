@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(27, 14, 96);
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  font-size: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid #ff975e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left */
+  z-index: 1002; /* Ensure it's above other elements */
+}
+
+#collapseIcon{
+  background-image: linear-gradient(to left, #ff975e 0%, #ff975e 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.nav__logo {
+  box-sizing: initial;
+  display: flex;
+  text-decoration: none;
+  font-size: 2.5rem;
+  background-image: linear-gradient(to left, #ffffff 0%, #ffffff 100%);
+  background-size: 100%;
+  height: 180px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transform: translateY(-3%);
+}
+
+.seperator__line {
+  border-left: 2px solid rgb(255, 151, 94);
+  height: 80px;
+  margin: 0 10rem;
+  box-sizing: initial;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.nav__menu {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav Links  */
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 254);
+  background-image: linear-gradient(to left, #ffffff 0%, #ffffff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.nav__links:hover {
+  -webkit-text-fill-color: rgb(0, 0, 254);
+  -moz-text-fill-color: rgb(0, 0, 254);
+}
+
+.nav__links i {
+  font-size: 24px;
+}
+
+.nav__text {
+  opacity: 0;
+  position: absolute;
+  right: 100%;
+  white-space: nowrap;
+  color: rgb(203, 0, 0);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transform: translateX(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  visibility: hidden;
+  background-image: linear-gradient(to left, #ffffff 0%, #ffffff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/* Hover effect for text */
+.nav__links:hover .nav__text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav__links:hover i {
+  transform: scale(1.2);
+  background-image: linear-gradient(to left, #e87f4e 0%, #ffffff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+
+
+

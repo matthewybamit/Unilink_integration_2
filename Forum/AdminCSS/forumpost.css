@@ -1,0 +1,89 @@
+/* Modal Background */
+.create-post-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+}
+/* Modal Content */
+.create-post-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Close Button */
+.close-post-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-post-modal:hover,
+.close-post-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Title */
+.create-post-content h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+/* Textarea */
+.forum-post-input {
+    width: 100%; /* Full width */
+    height: 100px; /* Height */
+    padding: 10px; /* Padding */
+    margin: 10px 0; /* Margin */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    font-size: 16px; /* Font size */
+}
+/* File Input */
+.forum-post-image-upload {
+    display: block; /* Block element */
+    margin: 10px 0; /* Margin */
+}
+/* Publish Button */
+.forum-post-btn {
+    background-color: #1b0e60; /* Green */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition */
+}
+.forum-post-btn:hover {
+    background-color: #1b0e60; /* Darker green on hover */
+}
+/* Textarea */
+.forum-post-text {
+    width: 80%; /* Full width */
+    height: 50px; /* Height */
+    padding: 10px; /* Padding */
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    font-size: 16px; /* Font size */
+}
+

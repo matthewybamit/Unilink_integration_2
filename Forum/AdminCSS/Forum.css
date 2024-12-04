@@ -1,0 +1,180 @@
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 110px;
+}
+
+
+/* Forum Container */
+.forum-container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.forum-sidebar {
+    width: 15%;
+    padding-right: 20px;
+    margin-top: 200px;
+}
+
+.forum-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #383d45;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.forum-btn.active {
+    background-color: #5079f4;
+}
+
+/* Main Content */
+.forum-content {
+    width: 85%;
+}
+
+.forum-header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.forum-header p {
+    font-size: 14px;
+    color: #777;
+    
+    margin-bottom: 20px;
+}
+
+/* Post Box */
+.forum-post-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.forum-post-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Posts Styling */
+.forum-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.post-user-info i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #777;
+    margin-left: 10px;
+}
+
+/* Post Options */
+.post-options {
+    position: relative;
+}
+
+.post-options-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 20px;
+    right: 0;
+    padding: 10px;
+    width: 100px;
+    z-index: 10;
+}
+
+.post-options i:hover + .post-options-menu {
+    display: block;
+}
+
+.post-options-menu button {
+    background: none;
+    border: none;
+    padding: 5px 0;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.post-content {
+
+}
+
+.post-interactions {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.post-interactions span {
+    font-size: 14px;
+    color: #777;
+}
+
+.avatar-image{
+    border-radius: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+.user-avatar{
+
+    align-items: center;
+    display: flex;
+    
+}
+
+.forum-post-btn{
+    height: 49px;
+}
+
+
+.avatar-image{
+    border-radius: 100px;
+}
+
+

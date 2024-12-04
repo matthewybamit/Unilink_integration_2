@@ -1,0 +1,62 @@
+/* Quick Links Section Styles */
+.quick-links {
+    background: linear-gradient(59deg, #1b0e60, #16222A);
+    padding: 40px 20px; /* Add padding */
+    text-align: center; /* Center the content */
+}
+
+.quick-links h2 {
+    font-size: 2.5rem; /* Increase font size for the heading */
+    color: #ff975e; /* Darker color for text */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.links-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.link-card {
+ 
+    border-radius: 10px; /* Rounded corners */
+  
+    padding: 20px; /* Add padding inside the card */
+    width: 300px; /* Fixed width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+}
+
+.link-card:hover {
+    background-color: #1b0e60;
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.link-card h3 {
+    font-size: 1.5rem; /* Font size for the card title */
+    color: #007bff; /* Bootstrap primary color for links */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.link-card p {
+    font-size: 1rem; /* Font size for the description */
+    color: white; /* Slightly darker grey for text */
+    margin-bottom: 15px; /* Space below the description */
+}
+
+.link-card a {
+    display: inline-block; /* Allow block display */
+    padding: 10px 15px; /* Padding for the link button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff; /* White text */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.link-card a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+

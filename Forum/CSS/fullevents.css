@@ -1,0 +1,106 @@
+/* Background Image Styling */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* Behind all other content */
+    opacity: 0.7; /* Optional: Add transparency for a faded effect */
+}
+
+/* .news-section styling */
+.news-section {
+    margin-top: 90px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden; /* Prevents overflow of gradient */
+}
+
+.news-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(27, 14, 96, 0.7), rgba(27, 14, 96, 0));
+    z-index: 1; /* Ensures it stays under the text */
+}
+
+.news-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative; /* To ensure it's above the gradient */
+    z-index: 2; /* Higher z-index to be above the gradient */
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; /* To ensure it's above the gradient */
+    z-index: 2; /* Higher z-index to be above the gradient */
+}
+
+/* News Card Styling */
+.news-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.news-content p {
+    font-size: 0.9rem;
+    color: #007BFF; /* Change this to match your color scheme */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* More News Button */
+.more-news {
+    border-radius: 5px;
+    color: #ff975e; /* Text color */
+    background-color: transparent; /* Make background transparent */
+    border: none; /* No border */
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: relative; /* To ensure it's above the gradient */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    z-index: 2; /* Ensure it's above the gradient */
+}
+
+.more-news:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.2); /* Increase size slightly on hover */
+}

@@ -1,0 +1,58 @@
+
+.option1 {
+    border-left: 5px solid #010058af;
+    background-color: var(--Border-color);
+    color: white;
+    cursor: pointer;
+}
+
+    .option1:hover {
+        border-left: 5px solid #010058af;
+        background-color: var(--Border-color);
+    }
+
+
+.bgevents {
+    
+    background-color: #E8E8E8; 
+    height: auto;
+    
+    padding: 5%;
+    width: 85%;
+   
+}
+.event_items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.box2, .box1, .box3, .box4
+, .box5, .box6 {
+    
+    background-color: white;
+    height: 350px;
+    width: 260px;
+    }
+
+.title1 {
+text-align: center;
+padding-top: 5%;
+}
+
+
+.imgg {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    height: 120px;
+}
+.addd{
+    font-size: 20px;
+    display: flex;
+    margin-top: 25%;
+    justify-content: center;
+}

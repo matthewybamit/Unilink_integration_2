@@ -1,0 +1,58 @@
+
+
+.bg {
+    background: linear-gradient(59deg, #1b0e60, #16222A);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 5.7%;
+    border-top: 2px solid #ff975e ;
+    color: white;
+}
+
+.bg h1{
+    font-size: 3rem;
+    color: #ff975e;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title0{
+    margin-top: 100px;
+}
+
+.descrip {
+    width: 70%;
+    text-align: justify;
+    font-size: 25px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.image {
+    height: 500px;
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Animation state when element is in view */
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}

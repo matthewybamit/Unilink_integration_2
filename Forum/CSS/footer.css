@@ -1,0 +1,161 @@
+/* FOOTER */
+
+footer {
+    background: #16222A;
+    background: linear-gradient(59deg, #1b0e60, #16222A);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30rem;
+}
+
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+}
+
+.footer__copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer__middle {
+    padding-top: 2em;
+    color: white;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.footer__logo-image {
+    max-width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+/* SOCIAL ICONS */
+
+ul.social__network {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+ul.social__network li {
+    margin: 0 5px;
+}
+
+.social__network a {
+    background-color: #F9F9F9;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #595959;
+    transition: all 0.2s;
+}
+
+.social__network a:hover {
+    transform: rotate(360deg);
+    transition: all 0.2s;
+}
+
+.social__network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social__network a.icoInstagram:hover {
+    background-color: #007bb7;
+}
+
+.footer__pad h4{
+    box-sizing: initial;
+    list-style: none; 
+    padding: 0;      
+    margin: 0;      
+    text-align: left; 
+}
+
+.list__unstyled a{
+    text-decoration: none;
+}
+
+.list__unstyled {
+    list-style: none; 
+    padding: 0;      
+    margin: 0;      
+    text-align: left; 
+}
+
+.social__image {
+    width: 30px;   
+    height: 30px;
+    border-radius: 50%; 
+    transition: transform 0.2s; 
+}
+
+.social__image:hover {
+    transform: rotate(360deg); 
+}
+
+.text__center{
+    text-align: center;
+}
+
+
+
+
+.footer__address {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10px;
+    flex-direction: column; 
+  }
+  
+  .footer__address-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .footer__address p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .footer__copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+    text-align: center; 
+}
+
+.footer__copy i {
+    margin-right: 5px; 
+}

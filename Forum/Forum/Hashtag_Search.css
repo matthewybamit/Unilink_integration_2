@@ -1,0 +1,82 @@
+.popular-hashtags {
+    margin: 20px 0;
+}
+
+.popular-hashtags h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hashtag-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between hashtags */
+
+}
+
+.hashtag-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+    padding: 2px;
+    margin-right:3px;
+    border-radius: 5px;
+    background-color: #dbdbdb;
+}
+
+.hashtag-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+.forum-search {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Add padding for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transform: translateX(-13%);
+}
+
+#search-icon {
+    position: absolute;
+    right: 10px;
+    top: 28%;
+    transform: translateY(-100%);
+    transform: translateX(-900%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+}
+
+#search-icon:hover {
+    color: #333;
+}
+
+
+.active-hashtag {
+    background-color: #007bff;
+    color: white;
+}
+
+#timePeriod {
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+

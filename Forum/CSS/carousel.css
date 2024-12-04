@@ -1,0 +1,101 @@
+ /* Carousel CSS */
+ .carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 110px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.6s ease-in-out; /* Slower, smoother transition */
+    width: 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Ensure the gradient shadow stays within bounds */
+}
+
+/* Adding gradient drop shadow on top of each image */
+.carousel-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(27, 14, 96, 0.8) 0%, rgba(27, 14, 96, 0) 100%);
+    z-index: 1; /* Keep it above the image but below the text */
+}
+
+.carousel-text {
+    position: absolute;
+    left: 50px;
+    color: white;
+    width: 45rem;
+    z-index: 2; /* Ensure text is on top of everything */
+    
+}
+
+.carousel-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.carousel-text p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn-apply {
+    padding: 10px 20px;
+    background-color: #f9b03b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    z-index: 0; /* Ensure image stays below everything */
+}
+
+/* Dots CSS */
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+

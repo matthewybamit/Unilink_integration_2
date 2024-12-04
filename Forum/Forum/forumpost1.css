@@ -1,0 +1,326 @@
+/* Modal Background */
+.create-post-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+}
+
+/* Modal Content */
+.create-post-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Maximum width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close-post-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-post-modal:hover,
+.close-post-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Title */
+.create-post-content h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Textarea */
+.forum-post-input {
+    width: 100%; /* Full width */
+    height: 100px; /* Height */
+    padding: 10px; /* Padding */
+    margin: 10px 0; /* Margin */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    font-size: 16px; /* Font size */
+}
+
+/* File Input */
+.forum-post-image-upload {
+    display: block; /* Block element */
+    margin: 10px 0; /* Margin */
+}
+
+/* Publish Button */
+.forum-post-btn {
+    background-color: #1b0e60; /* Green */
+    color: white; /* White text */
+    border: none; /* No border */
+    margin-top: 15px;
+    height: 20%;
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition */
+}
+
+.forum-post-btn:hover {
+    background-color: #1c1441; /* Darker green on hover */
+}
+/* Textarea */
+.forum-post-text {
+    width: 80%; /* Full width */
+    height: 50px; /* Height */
+    padding: 10px; /* Padding */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    resize: none; /* Disable resizing */
+    font-size: 16px; /* Font size */
+}
+
+.forum-post {
+    margin-top: 20px;
+}
+
+
+
+
+/* Modal Styles */
+.create-post-modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.create-post-content {
+    background-color: #dce6f7; /* Light blue background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Close Button */
+.close-post-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Title */
+.modal-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+/* User Profile Section */
+.user-profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.user-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Image Upload Section */
+.image-upload-label {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100px;
+    height: 100px;
+    background-color: #eef4ff;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #007bff; /* Dashed border */
+}
+
+.image-upload-icon img {
+    width: 60%;
+    height: 60%;
+    opacity: 0.8;
+}
+
+/* Text Area */
+.forum-post-input {
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+    border: none;
+    background-color: #272A86; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* Preview Section */
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.image-preview {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.image-preview-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .image-preview {
+        position: relative;
+        margin: 5px;
+    }
+
+    .image-preview img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .remove-image-btn {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+
+
+    .post-images-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.post-image-wrapper {
+    max-width: 100%;
+    flex: 1;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+ 
+.image-preview-slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 200px;
+}
+
+.image-preview-slider {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.image-preview {
+    position: relative;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.remove-image-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.image-preview-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+

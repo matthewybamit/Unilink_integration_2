@@ -1,0 +1,122 @@
+/* Universal box-sizing rule */
+* {
+    box-sizing: border-box;
+}
+
+/* Styling for the new note container */
+.new-note {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Styling for inputs, textarea, and button inside new-note */
+.new-note input,
+.new-note textarea,
+.new-note button {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto 0;
+    display: block;
+}
+
+/* Styling for the notes container */
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual note styling */
+.note {
+    background-color: #ffda00;
+    color: black;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    min-height: 100px;
+}
+
+/* Styling for the note subject */
+.note .subject {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Styling for links inside note subject */
+.note .subject a {
+    color: black;
+}
+
+/* Styling for the close button in the note */
+.note .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+/* Styling for the timestamp in the note */
+.note small {
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Styling for the content inside the note (truncated text) */
+.note .content {
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    max-height: 4.5em;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+/* Basic modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+/* Modal content box styling */
+.modal-content {
+    background-color: #ff7f50;
+    padding: 70px 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    border-radius: 20px;
+    max-width: 500px;
+    color: white;
+    border: 1px solid #888;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styling for input and textarea inside the modal */
+.modal input, .modal textarea {
+    outline: none;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    padding: 10px 12px;
+    resize: none;
+    width: 100%;
+}

@@ -1,0 +1,156 @@
+/* Styling for the .bgg container */
+.bgg {
+    margin-top: 13%;
+    margin-left: 441.3px;
+    width: 60%;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(27, 14, 96);
+    cursor: pointer;
+}
+
+/* Styling for horizontal rule */
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgb(255, 151, 94);
+    margin: 20px 0;
+}
+
+/* Styling for add-notes button */
+.add-notes {
+    width: 120px;
+    border-radius: 10px;
+}
+
+/* Styling for toggle list button */
+.toggle-list {
+    width: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Styling for toggle grid button */
+.toggle-grid {
+    width: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Styling for save button */
+.save-button {
+    justify-content: center;
+    width: 60px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(255, 151, 94);
+}
+
+/* Styling for toggle1 container */
+.toggle1 {
+    display: flex;
+    margin-right: 60%;
+}
+
+/* Styling for note cards */
+.note-card {
+    background-color: rgb(255, 151, 94);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for blue note card */
+.note-card_blue {
+    background-color: #4CB4FF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Orange border styling for note card */
+.orange {
+    border-left: 5px solid rgb(160, 56, 0);
+}
+
+/* Blue border styling for note card */
+.blue {
+    border-left: 5px solid #190380;
+}
+
+/* Styling for card header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Styling for card content */
+.card-content {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Adjust content when sidebar is collapsed */
+.sidebar.collapsed ~ .bgg {
+    margin-left: 316.4px;
+}
+
+/* Smooth transition for .bgg when sidebar is toggled */
+.bgg {
+    transition: margin-left 0.3s ease;
+}
+
+/* Styling for search input */
+.search-input input {
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #bebebe;
+    border-radius: 20px;
+    outline: none;
+    width: 300px;
+}
+
+/* Styling for search icon */
+.fa-magnifying-glass::before {
+    content: "\f002";
+}
+
+/* Styling for top bar */
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styling for the search icon inside search input */
+.search-input i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 13px;
+}
+
+/* Styling for search placeholder */
+.search-input::placeholder {
+    color: black;
+}
+
+/* Ensure proper positioning for search input container */
+.search-input {
+    position: relative;
+}

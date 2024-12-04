@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+.navbar{
+overflow: auto;
+background-color: #dadada;
+height: 5rem;
+position: sticky;
+font-size: 1.5rem;
+padding: 1.5rem;
+}
+
+
+.nav__links{
+   display: flex;
+   justify-content: space-between;
+   width: 30%;
+   float: right;
+   margin-right: 4rem;
+
+}
+
+
+.nav__items{
+    color: rgb(33, 101, 228);
+    
+}
+
+#navbar__logo{
+    background-color: #ca0202;
+    background-image: linear-gradient(to left,#f10000 0%, #0033da 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 5rem;
+  
+}

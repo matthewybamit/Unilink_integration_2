@@ -1,0 +1,72 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed; /* Change to fixed to stay in view when scrolling */
+    top: 7rem; /* Keep this to start right below the navbar */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 7rem); /* Full height minus navbar height */
+    background-color: rgb(255, 151, 94);
+    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    overflow-y: auto; /* Add scrolling if content exceeds height */
+}
+
+.sidebar.collapsed {
+    transform: translateX(-100%); /* Move out of view */
+}
+
+/* Other styles remain unchanged */
+.sidebar__menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.sidebar__item {
+    margin: 50px 0; /* Space between items */
+    position: relative; /* Position relative for the vertical line */
+}
+
+.sidebar__link {
+    color: rgb(27, 14, 96); /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 30px 50px; /* Padding for better click area */
+    display: block; /* Full width clickable area */
+    transition: background 0.3s; /* Transition for hover effect */
+}
+
+.sidebar__link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+/* Active link styles */
+.sidebar__item.active .sidebar__link {
+    background-color: rgba(255, 255, 255, 0.3); /* Highlight active link */
+}
+
+.sidebar__item.active::before {
+    content: ""; /* Empty content for the vertical line */
+    position: absolute; /* Position absolute for line */
+    left: 0; /* Align to the left */
+    top: 0; /* Start at the top */
+    bottom: 0; /* Extend to the bottom */
+    width: 4px; /* Width of the vertical line */
+    background-color: rgb(27, 14, 96); /* Color of the vertical line */
+    border-radius: 4px; /* Rounded edges for the line */
+}
+
+.collapse-icon {
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: 20px; /* Space from logo */
+    color: white; /* Icon color */
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+/* Rotate the icon when the sidebar is collapsed */
+.collapsed-icon {
+    transform: rotate(180deg); /* Rotate icon to point right */
+}

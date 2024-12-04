@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calendar Container */
+.calendar-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    max-width: 900px;
+    margin-top: 120px;
+    margin-left: 320px;
+}
+
+/* Form Container (for Create Event Page) */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 150px;
+    margin-left: 409px;
+}
+
+/* Header Styles */ 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+textarea,
+input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.close-btn {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #218838;
+}
+
+/* Calendar Header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Create Event Button Styles */
+.create-event-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.create-event-btn:hover {
+    background-color: #218838;
+}
+
+.calendar-nav a {
+    color: #007BFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+}
+
+.calendar-nav a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Calendar Body */
+.calendar-body {
+    overflow-x: auto;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+
+.calendar-table th {
+    width: 14.28%;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    font-weight: bold;
+    color: #333;
+    background-color: #ff975e;
+    box-sizing: border-box; 
+}
+
+.calendar-table td {
+    min-height: 100px;
+}
+
+td.calendar-day {
+    background-color: #303c66;
+    position: relative;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: transparent;
+    overflow: unset;
+}
+
+td.calendar-day::before {
+    content: attr(data-day);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.calendar-container .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.event {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.event a {
+    color: white;
+    text-decoration: none;
+}
+
+.event a:hover {
+    text-decoration: underline;
+}
+
+/* Event List Container */
+.event-list-container {
+    max-width: 1000px;
+    margin-top: 150px;
+    margin-left: 409px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+        margin-right: auto; 
+
+}
+
+.event-item {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.event-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.event-item p {
+    margin: 5px 0;
+}
+
+/* View More Styles */
+.view-more {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.view-more a {
+    display: inline-block;
+    font-size: 18px;
+    color: #666;
+    text-decoration: none;
+    padding: 2px 6px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.view-more a:hover {
+    background-color: #ddd;
+}
+
+/* Icon Link Styles */
+.icon-link {
+    font-size: 12px;
+    color: #666;
+    margin: 0 4px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    vertical-align: middle;
+}
+
+.icon-link:hover {
+    color: #333;
+}
+
+.material-icons {
+    font-size: 12px;
+    vertical-align: middle;
+}

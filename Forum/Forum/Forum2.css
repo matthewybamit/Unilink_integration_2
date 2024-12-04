@@ -1,0 +1,432 @@
+
+/* Forum Container */
+.forum-container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.forum-sidebar {
+    width: 15%;
+    padding-right: 20px;
+    margin-top: 400px;
+}
+
+.forum-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #383d45;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.forum-btn.active {
+    background-color: #5079f4;
+}
+
+.user-avatar{
+    display:flex;
+   
+}
+.user-image{
+    border-radius: 50px;
+}
+
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 110px;
+}
+
+/* Forum Container */
+.forum-container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.forum-sidebar {
+    width: 15%;
+    padding-right: 20px;
+    margin-top: 200px;
+}
+
+/* Main Content */
+.forum-content {
+    width: 85%;
+}
+
+.forum-header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.forum-header p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Post Box */
+.forum-post-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.forum-post-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Posts Styling */
+.forum-post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.username-link{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    text-decoration: none; 
+    color: black;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.timestamp {
+    font-size: 15px;
+    color: #777;
+    margin-left: 10px;
+}
+
+.post-options {
+    position: relative;
+}
+
+.post-options-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 20px;
+    right: 0;
+    padding: 10px;
+    width: 100px;
+    z-index: 10;
+}
+
+.post-options i:hover + .post-options-menu {
+    display: block;
+}
+
+.post-options-menu button {
+    background: none;
+    border: none;
+    padding: 5px 0;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.post-footer {
+    display: flex;
+ 
+    margin-top: 10px;
+}
+
+.post-footer__btn {
+    background-color: #5079f4;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.post-footer__btn i {
+    margin-right: 5px;
+}
+/* Comments Section Styling */
+.comments {
+    margin-top: 30px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment-avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-user {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-time {
+    margin-left: 30px;
+    font-size: 0.85em;
+    color: #777;
+}
+
+.comment-text {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.replies {
+    margin-top: 20px;
+}
+
+.avatar-image {
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.reply-avatar-image {
+    border-radius: 100px;
+    height: 30px;
+}
+
+.reply {
+    margin-left: 40px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.reply-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.reply-text {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #444;
+}
+
+.reply-time {
+    margin-left: 20px;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.show-more-replies {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.show-more-comments {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.view-less-comments {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.view-less-replies {
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/* Comment Form Styling */
+.comment-form {
+    display: flex; /* Flexbox layout to align input and button */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out the input and button */
+    width: 100%; /* Ensure the form takes up full width */
+    background-color: #fff; /* White background */
+    padding: 10px; /* Padding around the form */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    box-sizing: border-box; /* Box sizing to include padding in the width calculation */
+    margin-top: 10px; /* Adds space between the form and the post */
+}
+
+/* Text Input Styling */
+.comment-form input[type="text"] {
+    flex-grow: 1; /* Makes input take up available space */
+    padding: 12px 15px; /* Adds padding inside the input */
+    font-size: 1em; /* Font size for the text */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text color */
+    outline: none; /* Removes the default blue outline on focus */
+    transition: all 0.3s ease; /* Smooth transition for border and background */
+}
+
+/* Focus Effect for Input */
+.comment-form input[type="text"]:focus {
+    border-color: #5079f4; /* Blue border on focus */
+    background-color: #fff; /* White background on focus */
+    box-shadow: 0 0 8px rgba(80, 121, 244, 0.3); /* Subtle blue shadow on focus */
+}
+
+/* Placeholder Styling */
+.comment-form input[type="text"]::placeholder {
+    color: #aaa; /* Light gray placeholder */
+    font-style: italic; /* Italicized placeholder */
+}
+
+/* Submit Button Styling */
+.comment-form button {
+    background-color: #5079f4; /* Blue background for the button */
+    color: white; /* White text */
+    border: none; /* Removes the default border */
+    padding: 12px 15px; /* Adds padding inside the button */
+    border-radius: 50%; /* Makes the button circular */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover Effect for Button */
+.comment-form button:hover {
+    background-color: #3a64d6; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Icon Styling inside Button */
+.comment-form button i {
+    font-size: 1.2em; /* Icon size */
+}
+
+
+
+
+/* Reply Form */
+.reply-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.reply-form-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 500px; /* Maximum width to prevent it from stretching too wide */
+    margin-top: 10px;
+}
+
+.reply-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.reply-form input[type="text"]:focus {
+    background-color: #e0e0e0; /* Light gray when focused */
+    outline: none;
+}
+
+.reply-form-btn {
+    background-color: #5079f4;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.reply-form-btn:hover {
+    background-color: #3a63b6;
+}
+
+.reply-form-btn i {
+    font-size: 18px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/unistyle.css">
+    <link rel="stylesheet" href="CSS/Feature.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/services.css">
+    <link rel="stylesheet" href="CSS/curtain.css">
+    <script src="Javascripts/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+<!--NAV BAR-->
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="unilink.php" class="nav__logo">
+            <img src="images/unilink_logo.png" alt="">
+        </a>
+        <div class="seperator__line"></div>
+        <ul class="nav__menu">
+            <li class="nav__items">
+                <a href="Forum.html" class="nav__links">
+                    <i class="fas fa-comments"></i>
+                    <span class="nav__text">Forum</span>
+                </a>
+                <a href="#" class="nav__links">
+                    <i class="fas fa-blog"></i>
+                    <span class="nav__text">Blog</span>
+                </a>
+                <a href="Taskmanager.html" class="nav__links">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="nav__text">QuizCU</span>
+                </a>
+                <a href="user-profile.html" class="nav__links">
+                    <i class="fas fa-user"></i>
+                    <span class="nav__text">User</span>
+                </a>
+                <div id="menu__bar" onclick="toggleCurtainMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+    
+    <div id="curtainMenu" class="curtain-menu">
+        <a href="">Home</a>
+        <a href="services.html">Services</a>
+        <a href="#">About</a>   
+        <a href="#">Contact</a>
+    </div>
+
+
+<!-- Header Section -->
+<div class="header">
+    <img src="https://images.pexels.com/photos/7972949/pexels-photo-7972949.jpeg" alt="Students Image" width="100%" height="auto">
+    <h1>Services</h1>
+    <button>Join now</button>
+</div>
+
+<!-- Cards Section -->
+<div class="cards">
+    <div class="card">
+        <h3>Dates & Deadlines</h3>
+        <p>Upcoming dates and deadlines for Enrollment and Financial Aid.</p>
+        <a href="#">READ MORE</a>
+    </div>
+    <div class="card">
+        <h3>Student Handbook</h3>
+        <p>All the resources and information you need in one place.</p>
+        <a href="#">EXPLORE</a>
+    </div>
+    <div class="card">
+        <h3>Register for Classes</h3>
+        <p>Late-start classes are available now. Don’t wait to register.</p>
+        <a href="#">ENROLL NOW</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--Footer -->
+
+<footer class="mainfooter" role="contentinfo">
+    <div class="footer__middle">
+        <div class="footer__container">
+        
+            <!--Logo Column-->
+            <div class="footer__column footer__logo">
+                <img src="images/Logo.png" alt="Company Logo" class="footer__logo-image">
+            </div>
+
+            <!--Column2-->
+            <div class="footer__column">
+                <div class="footer__pad">
+                    <h4>Support</h4>
+                    <ul class="list__unstyled">
+                        <li><a href="#">Website Tutorial</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Webmaster</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Column3-->
+            <div class="footer__column">
+                <div class="footer__pad">
+                    <h4>Disclaimer</h4>
+                    <ul class="list__unstyled">
+                        <li><a href="#">Parks and Recreation</a></li>
+                        <li><a href="#">Public Works</a></li>
+                        <li><a href="#">Police Department</a></li>
+                        <li><a href="#">Fire</a></li>
+                        <li><a href="#">Mayor and City Council</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Socials-->
+            <div class="footer__column">
+                <h4>Follow Us</h4>
+                <ul class="social__network social-circle">
+                    <li>
+                        <a href="#" class="icoFacebook" title="Facebook">
+                            <img src="images/Facebook.png" alt="Facebook" class="social__image">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icoInstagram" title="Instagram">
+                            <img src="images/Instagram.png" alt="Instagram" class="social__image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Address and Phone Section -->
+        <div class="footer__address text__center">
+            <p>
+                <i class="fas fa-map-marker-alt"></i> Phase 6, Package 1, Area D, Barangay 178, Camarin, Caloocan City
+            </p>
+            <p>
+                <i class="fas fa-phone"></i> +63 912 345 6789
+            </p>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer__row">
+            <div class="footer__copy">
+                <p class="text__center">&copy; Copyright 2024 - Vicente Malapitan Senior High School. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilink</title>
+    <link rel="stylesheet" href="CSS/unistyle.css">
+    <link rel="stylesheet" href="CSS/Feature.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/Planner.css">
+    <link rel="stylesheet" href="CSS/curtain.css">
+    <link rel="stylesheet" href="CSS/notes.css">
+    <script src="Javascripts/app.js"></script>
+    <script src="planner.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--NAV BAR-->
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="unilink.php" class="nav__logo">
+            <img src="images/unilink_logo.png" alt="">
+        </a>
+        <div class="seperator__line"></div>
+        <ul class="nav__menu">
+            <li class="nav__items">
+                <a href="Forum.php" class="nav__links">
+                    <i class="fas fa-comments"></i>
+                    <span class="nav__text">Forum</span>
+                </a>
+                <a href="#" class="nav__links">
+                    <i class="fas fa-blog"></i>
+                    <span class="nav__text">Blog</span>
+                </a>
+                <a href="Taskmanager.html" class="nav__links">
+                    <i class="fa-solid fa-book"></i>
+                    <span class="nav__text">QuizCU</span>
+                </a>
+                <a href="user-profile.html" class="nav__links">
+                    <i class="fas fa-user"></i>
+                    <span class="nav__text">User</span>
+                </a>
+                <div id="menu__bar" onclick="toggleCurtainMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="curtainMenu" class="curtain-menu">
+    <a href="">Home</a>
+    <a href="services.html">Services</a>
+    <a href="#">About</a>   
+    <a href="#">Contact</a>
+</div>
+
+
+<div class="sidebar" id="sidebar">
+    <ul class="sidebar__menu">
+        <li class="sidebar__item "> <!-- Make this item active -->
+            <a href="Taskmanager.html" class="sidebar__link">
+                <i class="fas fa-tasks"></i> <!-- Icon for PLANNER -->
+                <span class="sidebar__text">PLANNER</span>
+            </a>
+        </li>
+        <li class="sidebar__item ">
+            <a href="CreateTask.html" class="sidebar__link">
+                <i class="fas fa-plus"></i> <!-- Icon for CREATE TASK -->
+                <span class="sidebar__text">CREATE TASK</span>
+            </a>
+        </li>
+        <li class="sidebar__item active">
+            <a href="notes.php" class="sidebar__link">
+                <i class="fas fa-sticky-note"></i> <!-- Icon for NOTE -->
+                <span class="sidebar__text">NOTE</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+  
+
+
+    <div class="bgg">
+        <div class="container">
+            
+            <div class="top-bar">
+                <button class="add-notes"><span>+</span> Add Notes</button>
+                
+                <div class="toggle1">
+                <button class="toggle-list"><span>☰</span></button>
+                <button class="toggle-grid">☷</button>
+                </div>
+                
+                <button class="save-button">Save</button>
+            </div>
+    <hr>
+            <div class="content">
+              
+                <div class="notes-section">
+                    <div class="note-card orange">
+                        <div class="card-header">
+                            <span>Subject 1</span>
+                            <span>12/08/2024</span>
+                        </div>
+                        
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec tortor arcu.
+                        </div>
+                    </div>
+    
+                    <div class="note-card_blue blue">
+                        <div class="card-header">
+                            <span>Subject 2</span>
+                            <span>12/08/2024</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec tortor arcu.
+                        </div>
+                    </div>
+    
+                    <div class="note-card_blue blue">
+                        <div class="card-header">
+                            <span>Subject 2</span>
+                            <span>12/08/2024</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec tortor arcu.
+                        </div>
+                    </div>
+    
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+</body>
+</html>

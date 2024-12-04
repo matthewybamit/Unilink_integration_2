@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw; /* Ensure it fills the entire viewport width */
+    position: relative;
+}
+
+.left-section {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    overflow: hidden; /* Ensure no overflow from the bubbles */
+}
+
+.school-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; /* Ensure the image is below the gradient and bubbles */
+}
+
+.left-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(232, 129, 71, 0.7), rgba(232, 129, 71, 0)); /* Gradient overlay */
+    z-index: 2; /* Ensure the gradient is on top of the image */
+}
+
+/* Bubble animation */
+.bubble {
+    position: absolute;
+    bottom: -100px; /* Start off the screen */
+    background-color: #1b0e60; /* Bubble color */
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: rise 8s infinite ease-in;
+    z-index: 3; /* Ensure bubbles are above the image and gradient */
+}
+
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+        transform: scale(0);
+    }
+    25% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    100% {
+        bottom: 100vh; /* End off the screen */
+        opacity: 0;
+        transform: scale(1.5); /* Bubbles grow slightly */
+    }
+}
+
+/* Bubbles centered in the middle of the image */
+.bubble:nth-child(1) {
+    left: 40%; /* Center-left */
+    width: 40px;
+    height: 40px;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+    left: 45%; /* Closer to center */
+    width: 60px;
+    height: 60px;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    left: 20%; /* Center of the image */
+    width: 30px;
+    height: 30px;
+    animation-duration: 9s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    left: 55%; /* Center-right */
+    width: 50px;
+    height: 50px;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(5) {
+    left: 80%; /* Further to the right */
+    width: 70px;
+    height: 70px;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(6) {
+    left: 95%; /* Further to the right */
+    width: 30px;
+    height: 30px;
+    animation-duration: 7s;
+    animation-delay: 8s;
+}
+.bubble:nth-child(7) {
+    left: 5%; /* Further to the right */
+    width: 55px;
+    height: 55px;
+    animation-duration: 7s;
+    animation-delay: 8s;
+}
+
+
+/* Right section styles unchanged */
+.Unilink {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.right-section {
+    width: 40%;
+    background-color: #2b1b75;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.school-logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+}
+
+
+.school-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+   
+}
+.login-text{
+    text-decoration: none;
+}
+
+.google-login img {
+    margin-right: 10px;
+    height: 30px;
+}
+
+.school-name{
+    border-bottom: 2px solid #ff975e;
+    height: 40px;
+    width: 70%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
