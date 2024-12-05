@@ -53,8 +53,7 @@ if (!isset($_SESSION['uid'])) {
   <script src="planner.js"></script>
   <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
 </head>
---
-<!-- NAV BAR -->
+--<!-- NAV BAR -->
 <nav class="navbar">
     <div class="navbar__container">
         <a href="unilink.php" class="nav__logo">
@@ -67,10 +66,11 @@ if (!isset($_SESSION['uid'])) {
                     <i class="fas fa-comments"></i>
                     <span class="nav__text">Forum</span>
                 </a>
-                <a href="Taskmanager.html" class="nav__links">
-                    <i class="fa-solid fa-book"></i>
-                    <span class="nav__text">QuizCU</span>
-                </a>
+                <a href="../Gamify/landingpage.php" class="nav__links">
+    <i class="fa-solid fa-chalkboard-teacher"></i>
+    <span class="nav__text">QuizCU</span>
+</a>
+
                 <a href="user_posts.php" class="nav__links">
                     <i class="fas fa-user"></i>
                     <span class="nav__text">User</span>
@@ -91,6 +91,7 @@ if (!isset($_SESSION['uid'])) {
         </ul>
     </div>
 </nav>
+
 <!-- Notification Dropdown -->
 <div class="notification-dropdown" id="notification-dropdown" style="display: none;">
     <div class="notification-header">

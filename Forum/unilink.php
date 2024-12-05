@@ -63,10 +63,11 @@ if ($notifications) {
                     <i class="fas fa-comments"></i>
                     <span class="nav__text">Forum</span>
                 </a>
-                <a href="Taskmanager.html" class="nav__links">
-                    <i class="fa-solid fa-book"></i>
-                    <span class="nav__text">QuizCU</span>
-                </a>
+                <a href="../Gamify/landingpage.php" class="nav__links">
+    <i class="fa-solid fa-chalkboard-teacher"></i>
+    <span class="nav__text">QuizCU</span>
+</a>
+
                 <a href="user_posts.php" class="nav__links">
                     <i class="fas fa-user"></i>
                     <span class="nav__text">User</span>
@@ -188,9 +189,9 @@ carousel.addEventListener('mouseout', () => {
     <h2>"Quick Links"</h2>
     <div class="links-container">
         <div class="link-card">
-            <h3>Admissions</h3>
-            <p>Learn about the admission process and requirements.</p>
-            <a href="#">Read More</a>
+            <h3>Student Portal</h3>
+            <p>Learn about the Student portal process and requirements.</p>
+            <a href="../../Unilink_integration_2/SIS2/student_information_system-main/students/stud.homepage.php">Read More</a>
         </div>
         <div class="link-card">
             <h3>Curriculum</h3>

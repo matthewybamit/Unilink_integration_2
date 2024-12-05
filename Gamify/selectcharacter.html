@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Character</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet">
+  <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1b0e60;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .character-selection-container {
+  position: relative;
+  width: 100%; /* Make it take the full width of the viewport */
+  max-width: 100%; /* Ensure no cropping happens */
+  height: 100vh; /* Make it take the full height of the viewport */
+  background: url('backgroundbody.jpg') no-repeat center center;
+  background-size: contain; /* Fit the entire image inside the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+    .characters {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .character {
+      
+      border-radius: 10px;
+      padding: 10px;
+      width: 480px;
+      cursor: pointer;
+      
+    }
+
+    .character:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 0px gray
+    }
+
+    .character img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .character p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="character-selection-container">
+ 
+    <div class="characters">
+      <!-- Character 1 -->
+      <div class="character" id="character1" onclick="selectCharacter('Character 1')">
+        <img src="boy.jpg" alt="Character 1">
+      
+      </div>
+      <!-- Character 2 -->
+      <div class="character" id="character2" onclick="selectCharacter('Character 2')">
+        <img src="girl.jpg" alt="Character 2">
+      
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function selectCharacter(characterId) {
+      // Redirect to the next page with the selected character ID as a query parameter
+      window.location.href = `enterinfo.html?character=${characterId}`;
+    }
+  </script>
+</body>
+</html>

@@ -103,10 +103,11 @@ if ($notifications) {
                     <i class="fas fa-comments"></i>
                     <span class="nav__text">Forum</span>
                 </a>
-                <a href="Taskmanager.html" class="nav__links">
-                    <i class="fa-solid fa-book"></i>
-                    <span class="nav__text">QuizCU</span>
-                </a>
+                <a href="../Gamify/landingpage.php" class="nav__links">
+    <i class="fa-solid fa-chalkboard-teacher"></i>
+    <span class="nav__text">QuizCU</span>
+</a>
+
                 <a href="user_posts.php" class="nav__links">
                     <i class="fas fa-user"></i>
                     <span class="nav__text">User</span>
@@ -259,8 +260,8 @@ if ($notifications) {
 </div>
 
         <div class="forum-header">
-            <h1>General Discussions</h1>
-            <p>For anything and everything that doesn't fit in other categories</p>
+            <h1>Welcome to your post</h1>
+            <p>For anything and everything that you post and liked</p>
         </div>
 
 <!-- Add Search Functionality -->

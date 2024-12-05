@@ -190,7 +190,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
                 $maxFileSize = 10 * 1024 * 1024;  // 10MB max size
 
-                $uploadDir1 = 'C:/xampp/htdocs/Unilink/images/';
+                $uploadDir1 = 'C:/xampp/htdocs/Unilink_integration_2/Forum/images/';
                 $uploadDir2 = 'C:/xampp/htdocs/Unilink-admin/Images/';
                 $relativePath = 'images/';
 
@@ -502,7 +502,19 @@ if ($sort === 'hot') {
 
 
 
-
+//elseif ($sort === 'hot') {
+    // Get the current date and time minus 24 hours
+    //$timeLimit = (new DateTime())->modify('-24 hours')->format('Y-m-d H:i:s');
+    // Get posts with the most likes in the last 24 hours (even if the post is old)
+   // $query = 'SELECT forum_posts.*, COUNT(post_likes.id) AS like_count 
+           //   FROM forum_posts 
+             // LEFT JOIN post_likes ON forum_posts.id = post_likes.post_id 
+             // WHERE post_likes.created_at >= :time_limit 
+            //  GROUP BY forum_posts.id 
+            //  ORDER BY like_count DESC';
+   // $stmt = $pdo->prepare($query);
+   // $stmt->bindParam(':time_limit', $timeLimit); // bind the time limit for likes
+   // $stmt->execute();
 
 //// Get the sort preference from session or GET request
 //if (isset($_SESSION['sort'])) {

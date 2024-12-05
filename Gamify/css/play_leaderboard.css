@@ -1,0 +1,151 @@
+.header {
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 24px;
+    color: black;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    transform: translateY(-240%);
+    font-family: 'Junge', sans-serif;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #1b0e60;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.leaderboard-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 139, 77);
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.leaderboard {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 5% 70px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #191970;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-left: 20px;
+    color: white;
+    font-family: 'Junge', sans-serif;
+}
+
+.entry-container {
+    margin-top: 30px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.box {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 100px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.rank {
+    width: 10%;
+    font-weight: bold;
+    padding-right: 10px auto;
+}
+
+.name {
+    width: 55%;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: lighter;
+}
+
+.score {
+    width: 0%;
+    padding-left: 1px auto;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.home-button {
+    background-color: #ff8b4d;
+    color: white;
+    padding: 10px 27px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 23px;
+    width: 12%;
+    margin: 20px auto;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-button i {
+    margin-right: 10px;
+}
+
+.home-button:hover {
+    background-color: #e07843;
+}
+
+
+.entry-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.entry-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.entry-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.entry-container::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+}

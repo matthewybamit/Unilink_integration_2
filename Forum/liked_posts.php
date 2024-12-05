@@ -130,7 +130,6 @@ $liked_posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </style>
 <body>
 
-
 <!-- NAV BAR -->
 <nav class="navbar">
     <div class="navbar__container">
@@ -144,10 +143,11 @@ $liked_posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <i class="fas fa-comments"></i>
                     <span class="nav__text">Forum</span>
                 </a>
-                <a href="Taskmanager.html" class="nav__links">
-                    <i class="fa-solid fa-book"></i>
-                    <span class="nav__text">QuizCU</span>
-                </a>
+                <a href="../Gamify/landingpage.php" class="nav__links">
+    <i class="fa-solid fa-chalkboard-teacher"></i>
+    <span class="nav__text">QuizCU</span>
+</a>
+
                 <a href="user_posts.php" class="nav__links">
                     <i class="fas fa-user"></i>
                     <span class="nav__text">User</span>
@@ -168,7 +168,6 @@ $liked_posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </ul>
     </div>
 </nav>
-
 
 <!-- Notification Dropdown -->
 <div class="notification-dropdown" id="notification-dropdown" style="display: none;">
