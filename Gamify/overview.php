@@ -64,7 +64,7 @@ mysqli_close($conn);
     }
 
     .content-box {
-      position: absolute;
+      position: flex;
       top: 195px;
       left: 652px;
       transform: translateX(-50%);
